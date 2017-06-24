@@ -1,0 +1,17 @@
+PyPIRCCommand
+urlopen
+HTTPError
+upload
+md5
+urlparse
+os
+platform
+sys
+io
+spawn
+Request
+log
+standard_b64encode
+socket
+DistutilsError
+DistutilsOptionError

@@ -1,0 +1,13 @@
+CompareDigestTestCase
+TestVectorsTestCase
+ConstructorTestCase
+CopyTestCase
+hashlib
+unittest
+hmac
+support
+functools
+test_main
+SanityTestCase
+warnings
+ignore_warning

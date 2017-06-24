@@ -1,0 +1,11 @@
+writes_bytecode_files
+ensure_bytecode_path
+os
+util
+errno
+sys
+support
+functools
+create_modules
+contextlib
+tempfile

@@ -1,0 +1,12 @@
+loads
+SliceTest
+operator
+evaluate_slice_index
+dumps
+itertools
+support
+test_main
+slice_indices
+MyIndexable
+sys
+unittest

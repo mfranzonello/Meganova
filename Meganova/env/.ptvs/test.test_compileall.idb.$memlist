@@ -1,0 +1,16 @@
+io
+time
+script_helper
+py_compile
+tempfile
+os
+compileall
+support
+sys
+EncodingTest
+CompileallTests
+importlib
+struct
+CommandLineTests
+shutil
+unittest

@@ -1,0 +1,10 @@
+SIMPLE_BASE
+parse_qsl_test_cases
+RFC2396_BASE
+UrlParseTestCase
+support
+RFC3986_BASE
+test_main
+RFC1808_BASE
+urllib
+unittest

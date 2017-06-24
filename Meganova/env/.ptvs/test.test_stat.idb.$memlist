@@ -1,0 +1,9 @@
+TestFilemodeCStat
+os
+import_fresh_module
+TestFilemode
+TestFilemodePyStat
+py_stat
+TESTFN
+c_stat
+unittest

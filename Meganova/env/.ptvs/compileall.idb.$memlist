@@ -1,0 +1,11 @@
+py_compile
+os
+struct
+exit_status
+compile_path
+importlib
+__all__
+compile_dir
+main
+sys
+compile_file

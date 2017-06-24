@@ -1,0 +1,15 @@
+Source_CaseSensitivityTestPEP451
+CaseSensitivityTestPEP302
+Frozen_CaseSensitivityTestPEP451
+os
+machinery
+Source_CaseSensitivityTestPEP302
+sys
+Frozen_CaseSensitivityTestPEP302
+CaseSensitivityTestPEP451
+importlib
+CaseSensitivityTest
+util
+test_support
+source_util
+unittest

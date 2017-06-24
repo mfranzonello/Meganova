@@ -1,0 +1,13 @@
+ClassCreationTests
+pickle
+test_main
+locale
+run_with_locale
+TypesTests
+run_unittest
+collections
+MappingProxyTests
+SimpleNamespaceTests
+types
+sys
+unittest

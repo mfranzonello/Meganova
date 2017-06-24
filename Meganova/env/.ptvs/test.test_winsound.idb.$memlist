@@ -1,0 +1,16 @@
+time
+test_main
+ctypes
+os
+BeepTest
+_have_soundcard
+PlaySoundTest
+support
+subprocess
+has_sound
+MessageBeepTest
+winsound
+__have_soundcard_cache
+winreg
+unittest
+_get_cscript_path

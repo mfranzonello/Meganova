@@ -1,0 +1,12 @@
+os
+test_main
+withpythonimplementation
+DECSAMPLE
+ENCSAMPLE
+subprocess
+support
+quopri
+QuopriTestCase
+io
+sys
+unittest

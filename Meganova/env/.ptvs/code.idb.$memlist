@@ -1,0 +1,8 @@
+CommandCompiler
+__all__
+InteractiveConsole
+traceback
+compile_command
+InteractiveInterpreter
+interact
+sys

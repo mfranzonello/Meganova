@@ -1,0 +1,10 @@
+copy
+pickle
+os
+tempfile
+foobar
+TestDefaultDict
+support
+test_main
+defaultdict
+unittest

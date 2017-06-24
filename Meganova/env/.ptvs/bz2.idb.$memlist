@@ -1,0 +1,17 @@
+io
+BZ2File
+_BUFFER_SIZE
+_MODE_WRITE
+__author__
+_MODE_READ_EOF
+compress
+BZ2Compressor
+decompress
+_MODE_CLOSED
+__all__
+warnings
+open
+BZ2Decompressor
+RLock
+_MODE_READ
+_builtin_open

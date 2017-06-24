@@ -1,0 +1,12 @@
+process_pdf
+PDFResourceManager
+TextConverter
+HTMLConverter
+set_debug_logging
+TagExtractor
+getopt
+XMLConverter
+main
+io
+sys
+LAParams

@@ -1,0 +1,13 @@
+EditorWindow
+idleConf
+os
+macosxSupport
+ScriptBinding
+tabnanny
+IOBinding
+tokenize
+string
+PyShell
+indent_message
+re
+tkMessageBox

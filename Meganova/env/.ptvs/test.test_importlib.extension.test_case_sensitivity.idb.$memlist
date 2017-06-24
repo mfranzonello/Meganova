@@ -1,0 +1,11 @@
+util
+Frozen_ExtensionCaseSensitivity
+ext_util
+ExtensionModuleCaseSensitivityTest
+_bootstrap
+support
+frozen_machinery
+Source_ExtensionCaseSensitivity
+source_machinery
+sys
+unittest

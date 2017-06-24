@@ -1,0 +1,9 @@
+check_syntax_error
+a
+run_unittest
+cpython_only
+global_nest_x
+weakref
+test_main
+ScopeTests
+unittest
