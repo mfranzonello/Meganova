@@ -6,9 +6,13 @@ from django.shortcuts import render
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
+from app.stella import *
+#from app import physical
+#import billing
 
 def home(request):
     """Renders the home page."""
+    request.session['first'] = billing.test
     assert isinstance(request, HttpRequest)
     return render(
         request,
@@ -22,6 +26,7 @@ def home(request):
 def contact(request):
     """Renders the contact page."""
     assert isinstance(request, HttpRequest)
+    print(request.session.get('first','fail test'))
     return render(
         request,
         'app/contact.html',
