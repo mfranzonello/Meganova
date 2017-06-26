@@ -1,5 +1,5 @@
 '''Charges and credits for all utility/provider rates'''
-import pandas,datetime
+import pandas,datetime,pickle
 from typing import List
 from app.stella import xltable,org,times
 
@@ -51,8 +51,10 @@ class RatesDB:
     '''Object that holds all rate tables for a utility'''
     def __init__(self,tables:xltable.RawXL,utility:org.IOU):
         self.utility = utility
+        self.name = utility.name
         self.data = tables.data
         self._refine_utility()
+        self.rates = tables
 
     def _refine_utility(self):
         for tbl in self.data:
@@ -137,7 +139,8 @@ class Rates:
     '''Base class for charges and credits of a specific category'''
     def __init__(self,rates_db:RatesDB,table:str):
         self.utility = rates_db.utility
-        self.table = self.data['{}rates'.format(table)]
+        self.table_type = table
+        self.table = rates_db.data['{}rates'.format(table)]
         self._unpivot()
 
     def _unpivot(self):
@@ -148,8 +151,6 @@ class Rates:
         df_melted = df.melt(id_vars=melt_list,var_name='charge')
         df_melted = df_melted[(df_melted['value']!=0)&
                                 (~df_melted['value'].isnull())]
-        for col in clean_cols:
-            df_melted[col] = df_melted['charge'].apply(something)
         self.table = df_melted
 
     def _clean(self,columns:List[str]):
@@ -160,7 +161,7 @@ class Rates:
                   'level':self._clean_level,
                   'crs type':self._clean_crs}
         functions = [f_dict[c] for c in columns]
-        self.table[columns] = self.table['charge'].apply(functions).drop('charge',axis=1)
+        self.table[columns] = self.table['charge'].apply(functions) #.drop('charge',axis=1)
 
     def _clean_unit(self,phrase:str) -> str:
         '''Determine base unit'''
@@ -221,6 +222,9 @@ class Rates:
         '''Strip crs type from component'''
         decoded = None
         return decoded
+
+    def to_html(self):
+        return self.table.to_html()
 
 class UtilityRates(Rates):
     '''Unbundled IOU charges and credits'''

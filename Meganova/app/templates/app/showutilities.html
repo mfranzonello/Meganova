@@ -1,0 +1,18 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<select name="utilities">
+    {% for utility in utilities %}
+    <option value="{{ utility.name }}">{{ utility.name }}</option>
+    {% endfor %}
+</select>
+
+<button class="btn btn-primary" type="submit"  name="submit" id="ss-submit">Generate Utility</button>
+
+<li><a href="{% url 'showproject' utility_name="utilities" %}">Show Project</a></li>
+
+{% endblock %}

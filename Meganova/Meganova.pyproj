@@ -4,7 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>Meganova</Name>
     <RootNamespace>Meganova</RootNamespace>
-    <InterpreterId>Global|PythonCore|3.4-32</InterpreterId>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -73,6 +73,10 @@
     <Folder Include="Meganova\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\app\showutilities.html" />
+    <Content Include="app\templates\app\waiting.html" />
+    <Content Include="app\templates\app\newproject.html" />
+    <Content Include="app\templates\app\showproject.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

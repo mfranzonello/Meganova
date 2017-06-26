@@ -19,6 +19,10 @@ urlpatterns = [
     url(r'^$', app.views.home, name='home'),
     url(r'^contact$', app.views.contact, name='contact'),
     url(r'^about', app.views.about, name='about'),
+    url(r'^showutilities', app.views.showutilities, name='showutilities'),
+    url(r'^newproject', app.views.newproject, name='newproject'),
+    url(r'^showproject/(?P<utility_name>)', app.views.showproject, name='showproject'),
+    #url(r'^waiting/(?P<nextview>)', app.views.waiting, name='waiting'),
     url(r'^login/$',
         django.contrib.auth.views.login,
         {

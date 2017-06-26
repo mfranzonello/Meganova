@@ -4,7 +4,7 @@ MSIError
 PID_CODEPAGE
 MSICOLINFO_NAMES
 sequence
-_Unspecified
+PID_LASTAUTHOR
 add_data
 isinstance
 MSIMODIFY_VALIDATE_DELETE
@@ -43,7 +43,7 @@ MSIMODIFY_INSERT
 current_feature
 getattr
 PID_TEMPLATE
-PID_LASTPRINTED
+MSIDBOPEN_CREATEDIRECT
 type_localizable
 MSIMODIFY_MERGE
 knownbits
@@ -54,7 +54,7 @@ _directories
 Table
 type_key
 PID_APPNAME
-PID_LASTAUTHOR
+_Unspecified
 string
 add_tables
 MSIMODIFY_UPDATE
@@ -92,5 +92,5 @@ MSIMODIFY_DELETE
 PID_SECURITY
 MSIMODIFY_VALIDATE
 TypeError
-MSIDBOPEN_CREATEDIRECT
+PID_LASTPRINTED
 type_string

@@ -10,3 +10,7 @@ translations = 'https://tvrp.box.com/shared/static/au17yvrq04xc3ol9djskrhoqfdme8
 
 # Rates
 rates = 'https://tvrp.box.com/shared/static/3lwl8ayt18kuqv86pvtunhf9cp2aib0n.xlsx'
+
+utilities = [{'name':'SCE'},
+             {'name':'PG&E'},
+             {'name':'SDG&E'}]
